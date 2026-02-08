@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>XII RPL • SMK NEGERI 1 PANDEGLANG</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="hero">
+        <div class="hero-inner">
+          <img
+            src="logo_rpl.png"
+            alt="Logo RPL"
+            class="logo-small left-logo"
+            onerror="this.style.display = 'none'"
+          />
+          <div class="hero-title">
+            <div class="star-field"></div>
+            <h1>SMK NEGERI 1 PANDEGLANG</h1>
+            <p class="sub">
+              Kelas <strong>XII RPL</strong> • Tahun Ajaran 2025/2026
+            </p>
+          </div>
+          <img
+            src="logo_sekolah.png"
+            alt="Logo Sekolah"
+            class="logo-small right-logo"
+            onerror="this.style.display = 'none'" />
+        </div>
+        <nav class="tabs" role="tablist" aria-label="Menu">
+         <button class="tab" data-tab="ringkasan">Ringkasan</button>
+         <button class="tab" data-tab="Profil">Profil jurusan</button>
+          <button class="tab" data-tab="mapel">Mata Pelajaran</button>
+          <button class="tab" data-tab="siswa">Siswa</button>
+          <button class="tab" data-tab="pengumuman">Pengumuman</button>
+          <button class="tab" data-tab="kegiatan">Kegiatan</button>
+        </nav>
+      </header>
+      <!-- Main -->
+      <main class="container">
+        <!-- LEFT: Ringkasan & Struktur -->
+        <section class="card left-col" id="ringkasan">
+          <div class="ringkasan-top">
+            <!-- HANYA WALI KELAS -->
+            <div class="wali-card">
+              <img
+                src="wali kelas.jpg"
+                alt="Wali Kelas"
+                class="foto-wali"
+                style="width: 180px; height: auto"
+              />
+              <div class="wali-info">
+                <div class="role"></div>
+                <div class="name" id="waliName">Ibu Desi Atmayasari</div>
+                <div class="muted">Wali Kelas XII RPL</div>
+              </div>
+            </div>
+          </div>
+          <div class="stats-grid">
+            <div class="stat">
+              <div class="num" id="total-siswa">0</div>
+              <div class="label">Total Siswa</div>
+            </div>
+           <div class="stat" id="goMapel" style="cursor:pointer;">
+            <div class="num" id="total-mapel">0</div>
+            <div class="label">Mata Pelajaran</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="total-pengumuman">0</div>
+            <div class="label">Pengumuman</div>
+          </div>
+          <div class="stat">
+            <div class="num" id="total-kegiatan">0</div>
+            <div class="label">Kegiatan</div>
+          </div>
+          </div>
+
+          <h3 class="section-title">Struktur Kelas</h3>
+          <div id="struktur-grid" class="struktur-grid"></div>
+          </section>
+
+          <!-- RIGHT: CONTENT PANELS -->
+<section class="card right-col" id="content-area">
+
+  <!-- PANEL RINGKASAN -->
+  <div class="tab-panel" id="panel-ringkasan">
+    <h3>Ringkasan</h3>
+
+    <!-- FOTO BERSAMA (HANYA DI RINGKASAN) -->
+    <div class="foto-bersama-vertical">
+      <div class="foto-item" data-full="foto_bersama1.jpg">
+        <div class="foto-caption">Foto bersama • Desember 2025</div>
+        <img src="foto_bersama1.jpg" alt="Foto MPLS" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama2.jpg">
+        <div class="foto-caption">Foto Kelas XII RPL • Mei 2025</div>
+        <img src="foto_bersama2.jpg" alt="Foto Kelas" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama3.jpg">
+        <div class="foto-caption">Foto Classmeet • Mei 2025</div>
+        <img src="foto_bersama3.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama4.jpg">
+        <div class="foto-caption">Foto Bersama RPL • Februari 2025</div>
+        <img src="foto_bersama4.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama5.jpg">
+        <div class="foto-caption">Foto TKA • November 2025</div>
+        <img src="foto_bersama5.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama6.jpg">
+        <div class="foto-caption">Foto bersama kelas X • Juli 2024</div>
+        <img src="foto_bersama6.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama7.jpg">
+        <div class="foto-caption">Foto di Masjid Al jabbar • Juli 2024</div>
+        <img src="foto_bersama7.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama8.jpg">
+        <div class="foto-caption">Foto Praktikum RPL • 2024</div>
+        <img src="foto_bersama8.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama9.jpg">
+        <div class="foto-caption">Foto Juara kelas • Oktober 2024</div>
+        <img src="foto_bersama9.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama10.jpg">
+        <div class="foto-caption">Foto Juara kelas • Oktober 2024</div>
+        <img src="foto_bersama10.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama11.jpg">
+        <div class="foto-caption">Foto bersama • September 2024</div>
+        <img src="foto_bersama11.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama12.jpg">
+        <div class="foto-caption">Foto Praktik rampak bedug • November 2024</div>
+        <img src="foto_bersama12.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama13.jpg">
+        <div class="foto-caption">Foto bersama • 2025</div>
+        <img src="foto_bersama13.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama14.jpg">
+        <div class="foto-caption">Foto bersama • Agustus 2024</div>
+        <img src="foto_bersama14.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama15.jpg">
+        <div class="foto-caption">Foto bersama juara mlbb • Mei 2025</div>
+        <img src="foto_bersama15.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama16.jpg">
+        <div class="foto-caption">Foto hari guru • November 2024</div>
+        <img src="foto_bersama16.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama17.jpg">
+        <div class="foto-caption">Foto Praktik musikalisasi puisi • Januari 2025</div>
+        <img src="foto_bersama17.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama18.jpg">
+        <div class="foto-caption">Foto Praktik drama • Mei 2025</div>
+        <img src="foto_bersama18.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama19.jpg">
+        <div class="foto-caption">Foto praktik rampak bedug • Mei 2025</div>
+        <img src="foto_bersama19.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama20.jpg">
+        <div class="foto-caption">Foto Praktikum RPL • Maret 2025</div>
+        <img src="foto_bersama20.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama21.jpg">
+        <div class="foto-caption">Foto Hari guru • November 2023</div>
+        <img src="foto_bersama21.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama22.jpg">
+        <div class="foto-caption">Foto bersama • Juli 2023</div>
+        <img src="foto_bersama22.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama23.jpg">
+        <div class="foto-caption">Foto Hari guru • November 2023</div>
+        <img src="foto_bersama23.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama24.jpg">
+        <div class="foto-caption">Foto Hari guru • November 2023</div>
+        <img src="foto_bersama24.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama25.jpg">
+        <div class="foto-caption">Foto Bersama RPL • Agustus 2023</div>
+        <img src="foto_bersama25.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama26.jpg">
+        <div class="foto-caption">Foto Perkemahan • November 2023</div>
+        <img src="foto_bersama26.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama27.jpg">
+        <div class="foto-caption">Foto Praktikum RPL • Oktober 2023</div>
+        <img src="foto_bersama27.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama28.jpg">
+        <div class="foto-caption">Foto bersama • September 2023</div>
+        <img src="foto_bersama28.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama29.jpg">
+        <div class="foto-caption">Foto Pramuka • September 2023</div>
+        <img src="foto_bersama29.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama30.jpg">
+        <div class="foto-caption">Foto bersama • September 2023</div>
+        <img src="foto_bersama30.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama31.jpg">
+        <div class="foto-caption">Foto hari batik • Oktober 2023</div>
+        <img src="foto_bersama31.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama32.jpg">
+        <div class="foto-caption">Foto MPLS • Juni 2023</div>
+        <img src="foto_bersama32.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama33.jpg">
+        <div class="foto-caption">Foto MPLS • Juni 2023</div>
+        <img src="foto_bersama33.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama34.jpg">
+        <div class="foto-caption">Foto MPLS • Juni 2023</div>
+        <img src="foto_bersama34.jpg" alt="Foto Praktikum" />
+      </div>
+      <div class="foto-item" data-full="foto_bersama35.jpg">
+        <div class="foto-caption">Foto ramadhan • April 2024</div>
+        <img src="foto_bersama35.jpg" alt="Foto Praktikum" />
+      </div>
+    </div>
+
+    <p class="memory">
+      “Kenangan yang akan terus hidup—bersama XII RPL, kita belajar,
+      tertawa, dan tumbuh menjadi keluarga.”
+    </p>
+    <p class="lead">
+      “Bersama membangun kenangan, meraih masa depan. Kelas XII RPL —
+      fokus pada praktik, proyek, dan inovasi.”
+    </p>
+    <div class="mini-cards">
+      <div class="mini">Aktif: <strong>Ya</strong></div>
+      <div class="mini">Ekskul: <strong></strong></div>
+      <div class="mini">Lab: <strong>Komputer RPL SKENSA</strong></div>
+    </div>
+  </div>
+
+<!-- PANEL SEJARAH JURUSAN -->
+<div class="tab-panel" id="panel-Profil" hidden>
+  <h3>Profil Jurusan</h3>
+
+  <div class="sejarah-wrap">
+
+    <!-- A. Pengenalan -->
+    <div class="sejarah-section">
+      <h4>A. Pengenalan Kompetensi Keahlian</h4>
+      <h5>Apa itu PPLG?</h5>
+      <p class="lead">
+        Jurusan yang mempelajari cara pengembangan perangkat lunak termasuk pembuatan,
+        pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.
+      </p>
+      <p class="lead">
+        Intinya PPLG tidak jauh dari 3 hal yaitu <strong>Coding</strong>, <strong>Desain</strong>, dan <strong>Algoritma</strong>.
+      </p>
+    </div>
+
+    <!-- B. Visi & Misi -->
+    <div class="sejarah-section">
+      <h4>B. Visi dan Misi PPLG/RPL</h4>
+
+      <h5>1. Visi Program Keahlian PPLG</h5>
+      <blockquote class="sejarah-quote">
+        “Menghasilkan lulusan program keahlian Teknologi Pengembangan Perangkat lunak yang unggul dan berakhlak mulia”
+      </blockquote>
+
+      <h5>2. Misi Program Keahlian PPLG</h5>
+      <ol class="sejarah-ol">
+        <li>Membekali peserta didik dengan nilai karakter dan budaya kerja PPLG</li>
+        <li>Membekali peserta didik dengan pengetahuan dan keterampilan sesuai bidang teknologi perangakat lunak dan Informatika</li>
+        <li>Membekali peserta didik untuk memiliki jiwa wirausaha sesuai bidang Perangkat Lunak.</li>
+      </ol>
+
+      <h5>3. Tujuan Program Keahlian PPLG</h5>
+      <blockquote class="sejarah-quote">
+        “Menyiapkan tenaga pelaksana pada PPLG yang memiliki pengetahuan, keterampilan dan sikap sebagai manusia yang bertanggung jawab dan mencintai profesi pekerjaannya”.
+      </blockquote>
+    </div>
+
+    <!-- C. Profil Jurusan -->
+    <div class="sejarah-section">
+      <h4>C. Profil Jurusan Kompetensi Keahlian PPLG dan RPL</h4>
+      <p class="lead">
+        RPL/PPLG adalah singkatan dari Rekayasa Perangkat Lunak dan merupakan sebuah jurusan yang ada di Sekolah Menengah Kejuruan (SMK).
+        RPL/PPLG adalah sebuah jurusan yang mempelajari dan mendalami semua cara-cara pengembangan perangkat lunak termasuk pembuatan,
+        pemeliharaan, manajemen organisasi pengembangan perangkat lunak dan manajemen kualitas.
+      </p>
+      <p class="lead">
+        Bukan hanya itu, RPL/PPLG juga berkaitan dengan software komputer mulai dari pembuatan website, aplikasi, game dan semua yang berkaitan
+        dengan pemrograman dengan menguasai bahasa pemrograman tersebut. Intinya RPL/PPLG tidak akan jauh-jauh dari tiga hal yaitu
+        <strong>Coding</strong>, <strong>Desain</strong>, dan <strong>Algoritma</strong>.
+      </p>
+    </div>
+
+    <!-- D. Keunggulan -->
+    <div class="sejarah-section">
+      <h4>D. Keunggulan Kompetensi Keahlian PPLG dan RPL</h4>
+      <ul class="sejarah-list">
+        <li>Mampu bekerja di berbagai bidang karena sudah dibekali dengan berbagai ilmu dan pengetahuan.</li>
+        <li>Dalam melakukan kerja lapangan akan lebih mudah karena saat pembelajaran sudah sering melakukan kerja praktek.</li>
+        <li>Pekerjaan relatif fleksibel, dapat dikerjakan dimanapun dan kapanpun (dengan koneksi).</li>
+        <li>Lebih terdepan dalam memahami dan mendalami berbagai teknologi.</li>
+        <li>Mampu memasang sebuah PC.</li>
+        <li>Mengerti fungsi dari komponen komputer.</li>
+      </ul>
+    </div>
+
+    <!-- E. Guru -->
+    <div class="sejarah-section">
+      <h4>E. Nama Guru Yang Mengajar Pada Kompetensi Keahlian PPLG</h4>
+      <ul class="sejarah-list">
+        <li>SAPRUDIN, S.Kom (2008 – Sekarang)</li>
+        <li>TEGUH SUGIARTO, S.T (2007 – Sekarang)</li>
+        <li>RESTI ANJANI, S.Kom (2015 – Sekarang)</li>
+        <li>SETIANA WATI, S.Kom (2011 – Sekarang)</li>
+      </ul>
+    </div>
+
+    <!-- F. Dipelajari -->
+    <div class="sejarah-section">
+      <h4>F. Apa Saja Yang Dipelajari di Jurusan PPLG</h4>
+      <div class="sejarah-grid">
+        <div class="sejarah-card">Dasar Desain Grafis</div>
+        <div class="sejarah-card">Pemrograman Dasar</div>
+        <div class="sejarah-card">Sistem Komputer</div>
+        <div class="sejarah-card">Komputer dan Jaringan Dasar</div>
+        <div class="sejarah-card">Basis Data</div>
+        <div class="sejarah-card">Produk Kreatif dan Kewirausahaan</div>
+        <div class="sejarah-card">Pemodelan Perangkat Lunak</div>
+        <div class="sejarah-card">Pemrograman Web dan Perangkat Bergerak</div>
+      </div>
+    </div>
+
+    <!-- G. Wajib -->
+    <div class="sejarah-section">
+      <h4>G. Siswa Kelas X PPLG Wajib</h4>
+      <ul class="sejarah-list">
+        <li>Menguasai Windows atau Linux (point plus)</li>
+        <li>Menguasai Office</li>
+        <li>Menguasai Web Browser</li>
+        <li>Punya akun email</li>
+        <li>Punya Laptop/PC</li>
+        <li>Punya flashdisk (menyimpan materi/project)</li>
+      </ul>
+
+      <div class="sejarah-note">
+        <strong>Sangat direkomendasikan:</strong><br>
+        Laptop standar (Core i3, RAM 8GB, SSD/HDD 500GB, USB 2.0/3.0, layar tidak terlalu kecil, HDMI/VGA), mouse, headset/earphone.
+      </div>
+    </div>
+
+    <!-- H. Peluang Kerja -->
+    <div class="sejarah-section">
+      <h4>H. Peluang Kerja</h4>
+      <ul class="sejarah-list">
+        <li>Software House</li>
+        <li>Web / Mobile Development</li>
+        <li>Junior Programmer</li>
+        <li>Operator Komputer</li>
+        <li>Operator Jaringan</li>
+        <li>Database Engineer / Database Administrator</li>
+        <li>Digital Marketing</li>
+      </ul>
+    </div>
+
+    <!-- I. Kuliah -->
+    <div class="sejarah-section">
+      <h4>I. Melanjutkan Kuliah ke Jurusan</h4>
+      <ul class="sejarah-list">
+        <li>Teknik Informatika</li>
+        <li>Ilmu Komputer</li>
+        <li>Sistem Informasi</li>
+        <li>Teknik Elektro</li>
+        <li>dll</li>
+      </ul>
+    </div>
+
+    <!-- J. Kegiatan Inti -->
+    <div class="sejarah-section">
+      <h4>J. Kegiatan Inti PPLG</h4>
+      <ul class="sejarah-list">
+        <li>KBM Produktif di Kelas dan Lab PPLG</li>
+        <li>UKK Tiap Semester</li>
+        <li>Ujian Semester Berbasis Komputer dan Android</li>
+        <li>Praktek Kerja Lapangan (PKL) Selama 6 Bulan</li>
+        <li>Kunjungan Industri</li>
+        <li>Uji Kompetensi</li>
+        <li>Ujian Sekolah</li>
+        <li>Dan kegiatan lainnya</li>
+      </ul>
+    </div>
+
+    <!-- K. Karakter -->
+    <div class="sejarah-section">
+      <h4>K. Karakter Siswa PPLG</h4>
+      <ul class="sejarah-list">
+        <li>Berakhlatul karimah</li>
+        <li>Tanggung jawab, disiplin, mandiri</li>
+        <li>Hormat dan santun</li>
+        <li>Kreatif dan percaya diri</li>
+        <li>Dapat bekerja dengan tim (kelompok)</li>
+      </ul>
+    </div>
+
+    <!-- SLOGAN -->
+    <div class="slogan-wrap">
+      <div class="slogan-text">RPL/PPLG, BE SMART AND NEVER GIVE UP</div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  
+  <!-- PANEL MATA PELAJARAN (JADI TABEL JADWAL) -->
+  <div class="tab-panel" id="panel-mapel" hidden>
+    <h3>Jadwal Mata Pelajaran</h3>
+    <div class="table-wrap">
+      <table class="jadwal-table" id="jadwalTable"></table>
+    </div>
+  </div>
+
+  <!-- PANEL SISWA -->
+  <div class="tab-panel" id="panel-siswa" hidden>
+    <div class="toolbar">
+      <input id="search" type="text" placeholder="Cari siswa, NIS atau nama..." />
+      <button id="exportCSV" type="button">Export CSV</button>
+    </div>
+    <div id="studentsGrid" class="students-grid"></div>
+  </div>
+
+  <!-- PANEL PENGUMUMAN -->
+  <div class="tab-panel" id="panel-pengumuman" hidden>
+    <h3>Pengumuman Terbaru</h3>
+    <ul id="pengumuman-list" class="list"></ul>
+  </div>
+
+  <!-- PANEL KEGIATAN -->
+  <div class="tab-panel" id="panel-kegiatan" hidden>
+    <h3>Agenda Kegiatan</h3>
+    <ul id="kegiatan-list" class="list"></ul>
+  </div>
+
+</section>
+
+
+      </main>
+      <footer class="footer">
+        <div>© <span id="year"></span> SMK NEGERI 1 PANDEGLANG — XII RPL</div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

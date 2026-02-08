@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portal XII RPL • SMKN 1 Pandeglang</title>
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="stars"></div>
+      <div class="grid"></div>
+    </div>
+    <main class="wrap">
+      <header class="top">
+        <img
+          src="logo_rpl.png"
+          class="logo"
+          alt="Logo RPL"
+          onerror="this.style.display = 'none'"
+        />
+        <div class="title">
+          <h1>PORTAL KELAS XII RPL</h1>
+          <p>SMK NEGERI 1 PANDEGLANG • Tahun Ajaran 2025/2026</p>
+        </div>
+        <img
+          src="logo_sekolah.png"
+          class="logo"
+          alt="Logo Sekolah"
+          onerror="this.style.display = 'none'"
+        />
+      </header>
+      <section class="card">
+        <div class="badge">✦ Welcome</div>
+        <h2>
+          “Portal resmi kelas XII RPL sebagai pusat informasi, dokumentasi, dan
+          perjalanan akademik.”
+        </h2>
+        <p class="desc">
+          “Di sinilah cerita kami disimpan—belajar, bertumbuh, dan menatap masa
+          depan bersama Bukan sekadar kelas, tapi perjalanan yang akan selalu
+          diingat.”
+        </p>
+        <!-- TOMBOL DI TENGAH -->
+        <div class="cta cta-center">
+          <a class="btn primary" href="kelas.html">Masuk ke Website Kelas</a>
+          <button class="btn ghost" id="btnPreview" type="button">
+            Lihat Highlight
+          </button>
+        </div>
+      </section>
+      <footer class="foot">
+        <span>© <span id="year"></span> XII RPL • SMKN 1 Pandeglang</span>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear(); // (opsional) tombol highlight biar ada fungsi const btn = document.getElementById("btnPreview"); btn.addEventListener("click", () => { alert("Highlight: Struktur Kelas, Daftar Siswa, Mapel, Agenda, dan Galeri Foto tersedia di halaman utama kelas."); }); // bintang random const stars = document.querySelector(".stars"); for (let i = 0; i < 55; i++) { const s = document.createElement("i"); s.style.left = Math.random()*100 + "%"; s.style.top = Math.random()*100 + "%"; s.style.animationDelay = (Math.random()*5) + "s"; s.style.opacity = (0.2 + Math.random()*0.8); s.style.transform = scale(${0.6 + Math.random()*1.6}); stars.appendChild(s); }
+    </script>
+  </body>
+</html>
